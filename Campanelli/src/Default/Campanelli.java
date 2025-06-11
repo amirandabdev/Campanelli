@@ -1,24 +1,43 @@
 package Default;
 
 public class Campanelli {
-	private String suono1;
-	private String suono2;
+	private String name;
+	private String sound;
 	
-	public Campanelli(String suono1, String suono2) {
+	public Campanelli(String name, String sound) {
 		super();
-		this.suono1 = suono1;
-		this.suono2 = suono2;
+		this.name = name;
+		this.sound = sound;
 		
 	}
 	
 	public String suona() {
-		return suono1 + " " + suono2;
+		return name + ": " + sound;
+	}
+
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getSound() {
+		return sound;
+	}
+
+	public void setSound(String sound) {
+		this.sound = sound;
 	}
 
 	@Override
 	public String toString() {
-		return suono1+ " " +suono2;
+		return "Nome: " + name + " - Suono" + sound + "]";
 	}
+
+	
 	
 	
 }

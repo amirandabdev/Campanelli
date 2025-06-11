@@ -9,7 +9,7 @@ public class Main {
 		Campanelli[1] = new Campanelli("c2", "dan");
 
 		for (Campanelli Campanello : Campanelli)
-			System.out.println(Campanello + "," + Campanello.suona());
+			System.out.println(Campanello.getName() + "," + Campanello.suona());
 
 	}
 
