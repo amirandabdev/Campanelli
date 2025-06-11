@@ -7,6 +7,7 @@ public class Main {
 
 		bells[0] = new Bell("c1", "din");
 		bells[1] = new Bell("c2", "dan");
+		bells[2] = new Bell("c3", "don");
 
 		for (Bell dummyBell : bells)
 			System.out.println(dummyBell.getName() + ": " + dummyBell.play());
