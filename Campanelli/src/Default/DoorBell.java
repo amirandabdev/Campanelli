@@ -1,17 +1,18 @@
 package Default;
 
-public class Bell implements BellSdk {
+public class DoorBell implements BellSdk {
 	private String name;
 	private String sound;
+	private String address;
 	
-	public Bell() {
+	public DoorBell() {
 		
 	}
 	
-	public Bell(String name, String sound) {
+	public DoorBell(String name, String sound, String address) {
 		this.name = name;
 		this.sound = sound;
-		
+		this.address = address;
 	}
 	
 	@Override
@@ -40,9 +41,17 @@ public class Bell implements BellSdk {
 		this.sound = sound;
 	}
 
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
 	@Override
 	public String toString() {
-		return "Name: " + name + " - Sound" + sound;
+		return "Name: " + name + " - Sound: " + sound + " - Address: " + address;
 	}
 
 	
