@@ -3,13 +3,13 @@ package Default;
 public class Main {
 
 	public static void main(String[] args) {
-		Campanelli[] Campanelli = new Campanelli[2];
+		Bell[] bells = new Bell[2];
 
-		Campanelli[0] = new Campanelli("c1", "din");
-		Campanelli[1] = new Campanelli("c2", "dan");
+		bells[0] = new Bell("c1", "din");
+		bells[1] = new Bell("c2", "dan");
 
-		for (Campanelli Campanello : Campanelli)
-			System.out.println(Campanello.getName() + "," + Campanello.suona());
+		for (Bell dummyBell : bells)
+			System.out.println(dummyBell.getName() + ": " + dummyBell.play());
 
 	}
 

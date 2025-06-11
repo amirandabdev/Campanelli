@@ -1,18 +1,18 @@
 package Default;
 
-public class Campanelli {
+public class Bell {
 	private String name;
 	private String sound;
 	
-	public Campanelli(String name, String sound) {
+	public Bell(String name, String sound) {
 		super();
 		this.name = name;
 		this.sound = sound;
 		
 	}
 	
-	public String suona() {
-		return name + ": " + sound;
+	public String play() {
+		return sound;
 	}
 
 	
@@ -34,7 +34,7 @@ public class Campanelli {
 
 	@Override
 	public String toString() {
-		return "Nome: " + name + " - Suono" + sound + "]";
+		return "Name: " + name + " - Sound" + sound + "]";
 	}
 
 	
