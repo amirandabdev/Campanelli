@@ -1,16 +1,19 @@
 package Default;
 
 public class Main {
+	
 
 	public static void main(String[] args) {
-		Bell[] bells = new Bell[2];
-
-		bells[0] = new Bell("c1", "din");
-		bells[1] = new Bell("c2", "dan");
-		bells[2] = new Bell("c3", "don");
-
-		for (Bell dummyBell : bells)
-			System.out.println(dummyBell.getName() + ": " + dummyBell.play());
+		BellFactorySdk bellFactory = new BellFactory();
+		BellInstance bellIstance = new BellInstance(bellFactory);
+		bellIstance.setup();
+		System.out.println(bellIstance.test());
+		
+		BellFactorySdk doorBellFactory = new DoorBellFactory();
+		BellInstance doorBellIstance = new BellInstance(doorBellFactory);
+		doorBellIstance.setup();
+		System.out.println(doorBellIstance.test());
+		
 
 	}
 
