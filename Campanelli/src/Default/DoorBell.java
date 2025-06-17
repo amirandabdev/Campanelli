@@ -9,51 +9,15 @@ public class DoorBell implements BellSdk {
 		
 	}
 	
-	public DoorBell(String name, String sound, String address) {
+	public DoorBell(String name, String sound) {
 		this.name = name;
 		this.sound = sound;
-		this.address = address;
 	}
 	
 	@Override
 	public String play() {
-		return sound;
+		return name + " " + sound;
 	}
-
-	
-	@Override
-	public String getName() {
-		return name;
-	}
-
-	@Override
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	@Override
-	public String getSound() {
-		return sound;
-	}
-
-	@Override
-	public void setSound(String sound) {
-		this.sound = sound;
-	}
-
-	public String getAddress() {
-		return address;
-	}
-
-	public void setAddress(String address) {
-		this.address = address;
-	}
-
-	@Override
-	public String toString() {
-		return "Name: " + name + " - Sound: " + sound + " - Address: " + address;
-	}
-
 	
 	
 	

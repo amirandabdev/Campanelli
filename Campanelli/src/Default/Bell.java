@@ -1,6 +1,6 @@
 package Default;
 
-public class Bell implements BellSdk {
+public class Bell implements BellSdk {	
 	private String name;
 	private String sound;
 	
@@ -17,32 +17,6 @@ public class Bell implements BellSdk {
 	@Override
 	public String play() {
 		return sound;
-	}
-
-	
-	@Override
-	public String getName() {
-		return name;
-	}
-
-	@Override
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	@Override
-	public String getSound() {
-		return sound;
-	}
-
-	@Override
-	public void setSound(String sound) {
-		this.sound = sound;
-	}
-
-	@Override
-	public String toString() {
-		return "Name: " + name + " - Sound" + sound;
 	}
 
 	
