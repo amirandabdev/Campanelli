@@ -1,5 +1,7 @@
 package Default;
 
+import lombok.Data;
+
 @Data
 public class Bell implements BellSdk {	
 	private String name;
