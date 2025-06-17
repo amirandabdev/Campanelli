@@ -1,24 +1,23 @@
 package Default;
 
-public class Bell implements BellSdk {	
+public class DoorBell implements BellSdk {
 	private String name;
 	private String sound;
+	private String address;
 	
-	public Bell() {
+	public DoorBell() {
 		
 	}
 	
-	public Bell(String name, String sound) {
+	public DoorBell(String name, String sound) {
 		this.name = name;
 		this.sound = sound;
-		
 	}
 	
 	@Override
 	public String play() {
-		return sound;
+		return name + " " + sound;
 	}
-
 	
 	
 	
