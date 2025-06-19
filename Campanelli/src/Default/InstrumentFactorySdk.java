@@ -1,6 +1,6 @@
 package Default;
 
-public interface BellFactorySdk {
+public interface InstrumentFactorySdk {
 	
 	BellSdk createBell();
 
