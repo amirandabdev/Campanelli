@@ -1,11 +1,11 @@
 package Default;
 
 public class BellInstance {
-	private BellFactorySdk factory;
+	private InstrumentFactorySdk factory;
 	private BellSdk bell;
 	
 	
-	public BellInstance(BellFactorySdk factory) {
+	public BellInstance(InstrumentFactorySdk factory) {
 		this.factory = factory;
 	}
 	
@@ -13,7 +13,7 @@ public class BellInstance {
 		this.bell = factory.createBell();
 	}
 	
-	public String test() {
+	public String play() {
 		return bell.play();
 	}
 

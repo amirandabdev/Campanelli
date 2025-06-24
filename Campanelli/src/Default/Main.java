@@ -4,15 +4,18 @@ public class Main {
 	
 
 	public static void main(String[] args) {
-		BellFactorySdk bellFactory = new BellFactory();
-		BellInstance bellIstance = new BellInstance(bellFactory);
-		bellIstance.setup();
-		System.out.println(bellIstance.test());
+		InstrumentFactorySdk bellFactory = new ChurchBellFactory();
+		BellInstance bellInstance = new BellInstance(bellFactory);
+		bellInstance.setup();
+		System.out.println(bellInstance.play());
 		
-		BellFactorySdk doorBellFactory = new DoorBellFactory();
-		BellInstance doorBellIstance = new BellInstance(doorBellFactory);
-		doorBellIstance.setup();
-		System.out.println(doorBellIstance.test());
+		InstrumentFactorySdk doorBellFactory = new DoorBellFactory();
+		BellInstance doorBellInstance = new BellInstance(doorBellFactory);
+		doorBellInstance.setup();
+		System.out.println(doorBellInstance.play());
+		
+		MultipleBellAdapter bellAdapted = new MultipleBellAdapter(bellInstance);
+		System.out.println(bellAdapted.play());
 		
 
 	}
